@@ -11,7 +11,7 @@ let NumMatrix = function (matrix) {
   matrix.forEach((row, y) => {
     row.forEach((val, x) => {
       this.memo[y + 1][x + 1] =
-      this.memo[y][x + 1] + this.memo[y + 1][x] - this.memo[y][x] + val;
+        this.memo[y][x + 1] + this.memo[y + 1][x] - this.memo[y][x] + val;
     });
   });
 };
